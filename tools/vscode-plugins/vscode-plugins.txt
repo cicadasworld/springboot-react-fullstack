@@ -1,0 +1,4 @@
+eslint
+es7-react-js-snippets
+prettier
+auto-rename-tag

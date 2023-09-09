@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://127.0.0.1:3306/todo_management?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&autoReconnect=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+    hibernate:
+#     none in production env
+      ddl-auto: update
+#    show-sql:
+#          true
+#  security:
+#    user:
+#      name: admin
+#      password: admin
+#      roles: ADMIN, USER
+app:
+  jwt-secret: 2bb80d537b1da3e38bd30361aa855686bde0eacd7162fef6a25fe97bf527a25b
+  jwt-expiration-milliseconds: 604800000  # 7 days
